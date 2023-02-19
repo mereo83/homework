@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <h1>Display Headings</h1>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):
+        </p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+    </div>
+
+    <div class="container mt-3">
+        <h1>Smaller, Secondary Text</h1>
+        <p>The small element (and the .small class) is used to create a smaller, secondary text in any heading:</p>
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3>
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+    </div>
+
+    <div class="container">
+        <p><mark>This is Marked Text</mark></p>
+        <p><del>This text is a deleted text</del></p>
+        <p><s>This text is a strikethrough text</s></p>
+        <p><ins>This text is an inserted text in doc</ins></p>
+        <p><u>It's a underlined text</u></p>
+        <p><small>It's a small text</small></p>
+        <p><strong>It's a bold text</strong></p>
+        <p><em>Its Italics text</em></p>
+        <p><em>Its <sub>subscript</sub> text and <sup>superscript</sup> text</em></p>
+    </div>
+
+    <div class="container">
+        <p class="text-left">Left aligned text.</p>
+        <p class="text-center">Center aligned text.</p>
+        <p class="text-right">Right aligned text.</p>
+        <p class="text-justify">Justified text.</p>
+        <p class="text-nowrap">No wrap text.</p>
+    </div>
+
+    <div class="container">
+        <p class="text-lowercase">Lower Case Text</p>
+        <p class="text-uppercase">Upper case text</p>
+        <p class="text-capitalize">Capitalized text</p>
+    </div>
+
+    <div class="container">
+        <p><abbr title="One stop lane for tutorials">Tutlane.com</abbr></p>
+        <p><abbr title="Bootstrap is a CSS/JS Framework">Bootstrap Tutorial</abbr></p>
+    </div>
+
+    <div class="container">
+        <blockquote class="blockquote">
+            <p class="mb-0">One day a man said to another: bla bla bla bla bla! Really? Yeah!</p>
+        </blockquote>
+    </div>
+
+    <blockquote class="blockquote">
+        <p class="mb-0">One day a man said to another: bla bla bla bla bla! Really? Yeah!</p>
+        <footer class="blockquote-footer">Famous <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+    <ul class="list-unstyled">
+        <li>Home</li>
+        <li>Tutorials
+            <ul>
+                <li>Database</li>
+                <li>Server Side</li>
+                <li>Client Side</li>
+                <li>Mobile</li>
+            </ul>
+        </li>
+        <li>Examples</li>
+        <li>Articles</li>
+        <li>Tools</li>
+        <li>News</li>
+        <li>About Us</li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">Bootstrap</li>
+        <li class="list-inline-item">CSS</li>
+        <li class="list-inline-item">JavaScript</li>
+    </ul>
+
+    <div class="container">
+        <dl class="row">
+            <dt class="col-sm-3">Tutorials</dt>
+            <dd class="col-sm-9">List of Tutorials.</dd>
+            <dt class="col-sm-3">Articles</dt>
+            <dd class="col-sm-9">List of Articles.</dd>
+            <dt class="col-sm-3">Tools</dt>
+            <dd class="col-sm-9">Online tools to execute the code online.</dd>
+            <dt class="col-sm-3 text-truncate">Server Side Coding Info</dt>
+            <dd class="col-sm-9">Server side coding will help to communicate with UI and databases.</dd>
+        </dl>
+    </div>
+a<!---->
+
+    <div class="col-6 mx-auto">
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"
+            aria-label=".form-control-lg example">
+        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+            aria-label=".form-control-sm example">
+
+        <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example"
+            disabled>
+        <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example"
+            disabled readonly>
+
+        <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example"
+            readonly>
+
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+        </div>
+
+        <form class="row g-3">
+            <div class="col-auto">
+                <label for="staticEmail2" class="visually-hidden">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </div>
+        </form>
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+        <div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+        </div>
+        <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+        </div>
+
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+            title="Choose your color">
+
+
+        <label for="exampleDataList" class="form-label">Datalist example</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+        </datalist>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
